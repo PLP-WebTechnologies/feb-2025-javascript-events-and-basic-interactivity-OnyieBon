@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <button id="clickButton">Click Me</button>
+    <div id="hoverBox">Hover Over Me</div>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    
+    <button id="secretButton">Secret Button</button>
+    
+    <p id="output"></p>
+  </div>
+
+  <div class="container">
+    
+    <button id="changeButton">Click to Change Me</button>
+
+    
+    <div class="gallery">
+      <img id="galleryImage" src="images/dog.jpg" alt="Gallery" />
+      <div class="gallery-controls">
+        <button id="prev">◀️</button>
+        <button id="next">▶️</button>
+      </div>
+    </div>
+
+    
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button data-tab="tab1" class="active">Tab 1</button>
+        <button data-tab="tab2">Tab 2</button>
+        <button data-tab="tab3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="tab1">A peaceful morning mist hovered over the mountains 
+        as the lake reflected the golden light of dawn.</div>
+      <div class="tab-content" id="tab2" style="display:none">Down in the valley, a loyal dog stood guard, 
+        eyes sharp and heart steady.</div>
+      <div class="tab-content" id="tab3" style="display:none">Beyond the forested ridge, 
+        the winding trail disappeared into nature’s untouched embrace, inviting the next adventure.</div>
+    </div>
+
+    <p id="output"></p>
+  </div>
+
+  <h2>📋 Register</h2>
+<form id="signupForm" novalidate>
+  <div class="form-group">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <small class="feedback" id="nameFeedback"></small>
+  </div>
+  <div class="form-group">
+    <input type="email" id="email" placeholder="Email Address" required />
+    <small class="feedback" id="emailFeedback"></small>
+  </div>
+  <div class="form-group">
+    <input type="password" id="password" placeholder="Password" required />
+    <small class="feedback" id="passwordFeedback"></small>
+  </div>
+  <button type="submit">Submit</button>
+  <p id="formOutput"></p>
+</form>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
